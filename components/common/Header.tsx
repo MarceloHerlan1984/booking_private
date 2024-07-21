@@ -1,5 +1,8 @@
 import React from "react";
 import { SideBarDraer } from "./SideBarDraer";
+import { AvatarNav } from "./AvatarNav";
+import NotifyBtn from "./NotifyBtn";
+import BasketItem from "./BasketItem";
 
 function Header() {
   return (
@@ -9,7 +12,9 @@ function Header() {
           <div className="flex items-center justify-start">
             <SideBarDraer />
           </div>
-          <div className="flex items-center space-x-3 md:space-x-6">rigut</div>
+          <div className="flex items-center space-x-3 md:space-x-6">
+            <AvatarNav /> <NotifyBtn /> <BasketItem />
+          </div>
         </div>
       </nav>
     </header>
